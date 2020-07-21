@@ -2,6 +2,7 @@
 OpenCore EFI for a 100% stable Intel i9 10900k + Z490 Vision G Hackintosh
 
 **Latest working macOS**: 10.15.6
+**Current OpenCore**: 0.5.9
 
 Complete hardware specs:
 - i9 10900k OC to 5.1GHz
@@ -23,7 +24,7 @@ The system dual boots Windows 10
 3. Boot the new macOS partition
 
 ## What works
-- macOS Catalina and macOS Big Sur
+- macOS Catalina
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB thanks to Fenvi T919)
 - Audio
 - HDMI/DP (OOB thanks to 5700 XT)
@@ -38,7 +39,7 @@ The system dual boots Windows 10
 ## What doesn't work
 - Sleep? Never got the chance to test it, my hackintosh is up 24/7
 
-![alt text](https://i.imgur.com/H0MNPxt.jpg "neofetch")
+![alt text](https://i.imgur.com/hn6s1Ik.jpg "neofetch")
 
 ## Kexts used:
 - AppleALC (audio)
