@@ -3,7 +3,7 @@ OpenCore EFI for a 100% stable Intel i9 10900k + Z490 Vision G Hackintosh
 
 **Latest working macOS**: 10.15.6
 
-**Current OpenCore**: 0.5.9
+**Current OpenCore**: 0.6.0
 
 Complete hardware specs:
 - i9 10900k OC to 5.1GHz
@@ -32,12 +32,12 @@ The system dual boots Windows 10
 - All USB ports
 - 2.5Gbit Ethernet
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
+- Intel Quick Sync
 - Temperature monitoring for everything except GPU (no 5700xt temp support in VirtualSMC)
 - DRM content (Netflix, ATV+, Airplay 2 mirroring etc)
 - Shutdown/Reboot/Update to newer macOS builds over time
 
 ## What doesn't work
-- iGPU (i currently don't use the integrated GPU but you can follow [these steps](https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh#notpartially-working) to try and see if it works for you)
 - Sleep? Never got the chance to test it, my hackintosh is up 24/7
 
 ![alt text](https://i.imgur.com/hn6s1Ik.jpg "neofetch")
