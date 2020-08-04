@@ -12,7 +12,7 @@ Complete hardware specs:
 - Radeon RX 5700 XT 8 GB
 - Fenvi T919
 - 64GB RAM - 3200 MHz DDR4
-- 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 00GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 1TB Samsung Evo 860 SATA SSD + other HDDs for storage (shared with Windows)
+- 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 1TB Samsung Evo 860 SATA SSD + other HDDs for storage (shared with Windows - exFAT)
 
 **SMBIOS**: iMacPro1,1
 
@@ -25,14 +25,14 @@ The system dual boots Windows 10
 3. Boot the new macOS partition
 
 ## What works
-- macOS Catalina
+- macOS Catalina (+ Big Sur as of beta 3)
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB thanks to Fenvi T919)
 - Audio
 - HDMI/DP (OOB thanks to 5700 XT)
 - All USB ports
 - 2.5Gbit Ethernet
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
-- Intel Quick Sync
+- Intel Quick Sync (if you enable IGPU in BIOS)
 - Temperature monitoring for everything except GPU (no 5700xt temp support in VirtualSMC)
 - DRM content (Netflix, ATV+, Airplay 2 mirroring etc)
 - Shutdown/Reboot/Update to newer macOS builds over time
@@ -44,7 +44,7 @@ The system dual boots Windows 10
 
 ## Kexts used:
 - AppleALC (audio)
-- Lilu + Whatevergreen (Audio helper, DRM support, GPU helper)
+- Lilu + Whatevergreen (Audio helper, DRM support, IGPU helper)
 - VirtualSMC + addons (you cannot boot without this + temperature support)
 - FakePCIID (there is no real Mac running a 10900k, we must fool the macOS to boot. this is how)
 - FakePCIID_Intel_I225-V (ethernet)
