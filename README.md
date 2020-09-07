@@ -3,7 +3,7 @@ OpenCore EFI for a 100% stable Intel i9 10900k + Z490 Vision G Hackintosh
 
 **Latest working macOS**: 10.15.6
 
-**Current OpenCore**: 0.6.0
+**Current OpenCore**: 0.6.1
 
 Complete hardware specs:
 - i9 10900k OC to 5.1GHz
@@ -14,14 +14,14 @@ Complete hardware specs:
 - 64GB RAM - 3200 MHz DDR4
 - 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 1TB Samsung Evo 860 SATA SSD + other HDDs for storage (shared with Windows - exFAT)
 
-**SMBIOS**: iMacPro1,1
+**SMBIOS**: iMac20,2
 
 The system dual boots Windows 10
 
 ## Get it running
 0. Make sure to update your BIOS, disable VT-d, disable CSM support and enable XHCI Hand-off (for Airdrop/Continuity/Sidecar)
 1. Create an macOS Catalina 10.15.x USB-Installer Stick, install OpenCore and copy my EFI folder ([how?](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D#installation-notes))
-2. Generate a new serial number, motherboard id and SMUUID (make sure serial number is **invalid** in order to iMessage/Facetime to work) ([how?](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#explanation-5) + [this tool](http://mackie100projects.altervista.org/download-clover-configurator/))
+2. Generate a new serial number, motherboard id, ROM (that's your mobo's mac address without dots) and SMUUID (make sure serial number is **invalid** in order to iMessage/Facetime to work) ([how?](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#explanation-5) + [this tool](http://mackie100projects.altervista.org/download-clover-configurator/))
 3. Boot the new macOS partition
 
 ## What works
@@ -49,6 +49,7 @@ The system dual boots Windows 10
 - FakePCIID (there is no real Mac running a 10900k, we must fool the macOS to boot. this is how)
 - FakePCIID_Intel_I225-V (ethernet)
 - FakePCIID_Intel_HDMI_Audio (optional, support for audio via HDMI)
+- DAGPM (better dGPU performance for 5700xt)
 
 ## Drivers used:
 - OpenCanopy.efi (required by OpenCore)

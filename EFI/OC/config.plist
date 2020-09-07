@@ -16,6 +16,14 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>RX 5700 XT Boost</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-RX 5700 XT-Version 1.0.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>SSDT-EC-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -66,13 +74,13 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>_Q11 to XQ11</string>
+				<string>Rename PEGP to EGP0 (Graphics)</string>
 				<key>Count</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
-				<data>X1ExMQ==</data>
+				<data>UEVHUA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -80,7 +88,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>WFExMQ==</data>
+				<data>RUdQMA==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -88,33 +96,7 @@
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>_Q12 to XQ12</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>X1ExMg==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFExMg==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
+				<data>RUdQMA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -154,8 +136,6 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
-			<key>ProvideMaxSlide</key>
-			<integer>0</integer>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -201,13 +181,15 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
+				<key>device-id</key>
+				<data>cKEAAA==</data>
 				<key>layout-id</key>
 				<data>BwAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AwDImw==</data>
+				<data>AwCSPg==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630</string>
 			</dict>
@@ -228,6 +210,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>DAGPM.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -381,9 +379,9 @@
 		</array>
 		<key>Emulate</key>
 		<dict>
-			<key>Cpuid1Data</key>
-			<data></data>
 			<key>Cpuid1Mask</key>
+			<data></data>
+			<key>Cpuid1Data</key>
 			<data></data>
 		</dict>
 		<key>Patch</key>
@@ -532,9 +530,9 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -597,11 +595,13 @@
 			<key>ApplePanic</key>
 			<true/>
 			<key>DisableWatchDog</key>
-			<false/>
+			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>SerialInit</key>
+			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -617,8 +617,6 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BlacklistAppleUpdate</key>
-			<true/>
 			<key>BootProtect</key>
 			<string>None</string>
 			<key>ExposeSensitiveData</key>
@@ -631,7 +629,7 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<string></string>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -652,9 +650,7 @@
 				<key>SystemAudioVolume</key>
 				<data>UA==</data>
 				<key>boot-args</key>
-				<string>darkwake=0 agdpmod=pikera alcid=7</string>
-				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<string>shikigva=80 agdpmod=pikera keepsyms=1 alcid=7</string>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
 			</dict>
@@ -718,10 +714,12 @@
 			<false/>
 			<key>MLB</key>
 			<string>CHANGEME</string>
+			<key>ROM</key>
+			<string>CHANGEME TO MACADDRESS THEN MAKE THIS KEY DATA (INSTEAD OF STRING)</string>
 			<key>SpoofVendor</key>
-			<true/>
+			<false/>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
 			<string>CHANGEME</string>
 			<key>SystemUUID</key>
@@ -742,6 +740,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -750,8 +750,6 @@
 			<integer>0</integer>
 			<key>MinVersion</key>
 			<integer>0</integer>
-			<key>GlobalConnect</key>
-			<false/>
 		</dict>
 		<key>Audio</key>
 		<dict>
@@ -834,6 +832,8 @@
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
@@ -855,8 +855,6 @@
 			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
-			<false/>
-			<key>AppleFramebufferInfo</key>
 			<false/>
 		</dict>
 		<key>Quirks</key>
