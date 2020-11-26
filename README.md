@@ -40,7 +40,7 @@ The system dual boots Windows 10
 ## What doesn't work
 - Sleep? Never got the chance to test it, my hackintosh is up 24/7
 
-![alt text](https://i.imgur.com/hn6s1Ik.jpg "neofetch")
+![alt text](https://i.imgur.com/vUPdreT.jpg "neofetch")
 
 ## Kexts used:
 - AppleALC (audio)
