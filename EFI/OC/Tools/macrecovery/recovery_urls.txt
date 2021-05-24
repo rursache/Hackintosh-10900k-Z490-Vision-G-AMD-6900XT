@@ -24,6 +24,9 @@ High Sierra
 Mojave
 ./macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00
 
+Catalina
+./macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000
+
 Diagnostics
 ./macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 -diag
 ./macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000GDVQ00 -diag
