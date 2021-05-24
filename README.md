@@ -1,15 +1,15 @@
-# Hackintosh - Intel i9 10900k Z490 Vision G
-OpenCore EFI for a 100% stable Intel i9 10900k + Z490 Vision G Hackintosh
+# macOS Big Sur - Hackintosh - Intel 10900k, Z490 Vision G, RX 6900XT
+OpenCore EFI for a 100% stable Intel 10900k + Z490 Vision G + RX 6900XT Hackintosh
 
-**Latest working macOS**: 11.0.1
+**Latest working macOS**: 11.4
 
-**Current OpenCore**: 0.6.3
+**Current OpenCore**: 0.6.9
 
 Complete hardware specs:
 - i9 10900k OC to 5.1GHz
 - Gigabyte Z490 Vision G
 - Fractal Design Celsius S24 Black 
-- Radeon RX 5700 XT 8 GB
+- AMD Radeon RX 6900 XT
 - Fenvi T919
 - 64GB RAM - 3200 MHz DDR4
 - 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 1TB Samsung Evo 860 SATA SSD + other HDDs for storage (shared with Windows - exFAT)
@@ -28,7 +28,7 @@ The system dual boots Windows 10
 - macOS Catalina and Big Sur
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB thanks to Fenvi T919)
 - Audio
-- HDMI/DP (OOB thanks to 5700 XT)
+- HDMI/DP (OOB thanks to 6900 XT)
 - All USB ports
 - 2.5Gbit Ethernet
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
@@ -40,7 +40,7 @@ The system dual boots Windows 10
 ## What doesn't work
 - Sleep? Never got the chance to test it, my hackintosh is up 24/7
 
-![alt text](https://i.imgur.com/vUPdreT.jpg "neofetch")
+![alt text](https://i.imgur.com/NtHc8uK.jpg "neofetch")
 
 ## Kexts used:
 - AppleALC (audio)
@@ -48,8 +48,6 @@ The system dual boots Windows 10
 - VirtualSMC + addons (you cannot boot without this + temperature support)
 - FakePCIID (there is no real Mac running a 10900k, we must fool the macOS to boot. this is how)
 - FakePCIID_Intel_I225-V (ethernet)
-- FakePCIID_Intel_HDMI_Audio (optional, support for audio via HDMI)
-- DAGPM (better dGPU performance for 5700xt)
 
 ## Drivers used:
 - OpenCanopy.efi (required by OpenCore)
