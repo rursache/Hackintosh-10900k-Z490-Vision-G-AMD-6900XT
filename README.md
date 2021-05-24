@@ -1,5 +1,5 @@
-# macOS Big Sur - Hackintosh - Intel 10900k, Z490 Vision G, RX 6900XT
-OpenCore EFI for a 100% stable Intel 10900k + Z490 Vision G + RX 6900XT Hackintosh
+# macOS Big Sur - Hackintosh
+## Intel 10900k, Z490 Vision G, RX 6900XT
 
 **Latest working macOS**: 11.4
 
@@ -46,8 +46,8 @@ The system dual boots Windows 10
 - AppleALC (audio)
 - Lilu + Whatevergreen (Audio helper, DRM support, IGPU helper)
 - VirtualSMC + addons (you cannot boot without this + temperature support)
-- FakePCIID (there is no real Mac running a 10900k, we must fool the macOS to boot. this is how)
-- FakePCIID_Intel_I225-V (ethernet)
+- FakePCIID (cpu support)
+- FakePCIID_Intel_I225-V (ethernet support)
 
 ## Drivers used:
 - OpenCanopy.efi (required by OpenCore)
