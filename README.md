@@ -6,13 +6,13 @@
 **Current OpenCore**: 0.6.9
 
 Complete hardware specs:
-- i9 10900k OC to 5.1GHz
+- Intel 10900k OC to 5.1GHz
 - Gigabyte Z490 Vision G
-- Fractal Design Celsius S24 Black 
+- Noctua NH-D15 (with Thermal Grizzly Kryonaut) 
 - AMD Radeon RX 6900 XT
 - Fenvi T919
 - 64GB RAM - 3200 MHz DDR4
-- 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 1TB Samsung Evo 860 SATA SSD + other HDDs for storage (shared with Windows - exFAT)
+- 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition) + 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition) + 4TB Samsung Evo 860 SATA SSD (shared with Windows, formatted as exFAT)
 
 **SMBIOS**: iMac20,2
 
@@ -33,7 +33,7 @@ The system dual boots Windows 10
 - 2.5Gbit Ethernet
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
 - Intel Quick Sync (if you enable IGPU in BIOS)
-- Temperature monitoring for everything except GPU (no 5700xt temp support in VirtualSMC)
+- Temperature monitoring for everything except GPU (no GPU temp support in VirtualSMC for navi and big navi cards)
 - DRM content (Netflix, ATV+, Airplay 2 mirroring etc)
 - Shutdown/Reboot/Update to newer macOS builds over time
 
