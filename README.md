@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/foW4AcU.jpg" height="350" title="HackintoshLogo">
+
 # macOS Monteray - Hackintosh
 
 **Latest working macOS**: 12.1
@@ -6,20 +8,24 @@
 
 Complete hardware specs:
 - **CPU**: Intel 10900k OC to 5.1GHz
-	- **Cooling**: Noctua NH-D15 (with Thermal Grizzly Kryonaut) 
+	- **Cooling**: 
+		- Noctua NH-D15 (with Thermal Grizzly Kryonaut) 
+		- 6x Noctua Fans around the case for airflow
 - **Motherboard**: Gigabyte Z490 Vision G
 - **GPU**: AMD Radeon RX 6900 XT
-- **WiFi/Bluetooth**: Fenvi T919
+- **WiFi/Bluetooth**: Fenvi T919 with wired antennas
 - **RAM**: 64GB @ 3200 MHz DDR4
 - **NVME SSD**: 
-	- 500GB Kingston A2000 NVMe PCIe SSD (macOS Partition)
-	- 500GB Kingston A2000 NVMe PCIe SSD (Windows Partition)
-- **SATA SSD**: 4TB Samsung Evo 860 SATA SSD (shared with Windows, formatted as exFAT)
+	- 500GB Kingston A2000 NVMe PCIe SSD (macOS)
+	- 500GB Kingston A2000 NVMe PCIe SSD (Windows)
+- **SATA SSD**: 
+	- 4TB Samsung Evo 860 SATA SSD (shared with Windows and Linux, formatted as exFAT)
+	- 500GB Samsung Evo 840 SATA SSD (Linux)
 - **PC Case**: NZXT H710 (important because front usb ports are mapped)
 
 **SMBIOS**: iMac20,2
 
-The system dual boots Windows 11
+The system triple boots Windows 11 and Linux Mint
 
 ## Tools
 - [OpenCore Auxiliary Tools](https://github.com/ic005k/QtOpenCoreConfig) - easy `config.plist` management
