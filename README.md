@@ -1,8 +1,8 @@
 # macOS Monteray - Hackintosh
 
-**Latest working macOS**: 12.0.1
+**Latest working macOS**: 12.1
 
-**Current OpenCore**: 0.7.5
+**Current OpenCore**: 0.7.6
 
 Complete hardware specs:
 - **CPU**: Intel 10900k OC to 5.1GHz
@@ -33,7 +33,7 @@ The system dual boots Windows 11
 4. Boot the new macOS partition
 
 ## What works
-- macOS Monteray (12.0.1) and Big Sur (11.6.1)
+- macOS Monteray (12.1) and Big Sur (11.6.1)
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB via Fenvi T919)
 - Audio
 - HDMI/DP (Variable Refresh Rate if your Display is FreeSync 2 compatible)
