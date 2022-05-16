@@ -52,8 +52,8 @@ The system triple boots Windows 11 and Linux Mint
 - Shutdown/Reboot/Update to newer macOS builds over time
 
 ## What doesn't work
-I225-V 2.5Gbit Ethernet Adapter on Monteray (worked on Big Sur with a bootarg still present in the `config.plist`).
-I'm currently using a PCI-e card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext.
+I225-V 2.5Gbit Ethernet Adapter on Monteray only works if you [reflash the firmware](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md).
+I'm currently using a PCI-e card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext as I already bought the card before the fix was found.
 
 ## Port mapping
 All USB ports work **except** the two next to the ethernet port (HS03/SS03 and HS04/SS04). I needed another USBC port on the front of my case + a USB 3 port + a USB 2 port so i had to disable those 2. If you don't need front IO (or use a different PC case) you can use `USBInjectAll.kext`, set `XhciPortLimit = true` and use Hackintool to map the ports you want.
