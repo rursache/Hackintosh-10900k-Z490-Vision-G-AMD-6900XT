@@ -2,9 +2,9 @@
 
 # macOS Monteray - Hackintosh
 
-**Latest working macOS**: 12.1
+**Latest working macOS**: 12.3.1
 
-**Current OpenCore**: 0.7.6
+**Current OpenCore**: 0.8.0
 
 Complete hardware specs:
 - **CPU**: Intel 10900k OC to 5.1GHz
@@ -14,6 +14,7 @@ Complete hardware specs:
 - **Motherboard**: Gigabyte Z490 Vision G
 - **GPU**: AMD Radeon RX 6900 XT
 - **WiFi/Bluetooth**: Fenvi T919 with wired antennas
+- **Ethernet**: Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet
 - **RAM**: 64GB @ 3200 MHz DDR4
 - **NVME SSD**: 
 	- 500GB Kingston A2000 NVMe PCIe SSD (macOS)
@@ -52,7 +53,7 @@ The system triple boots Windows 11 and Linux Mint
 
 ## What doesn't work
 I225-V 2.5Gbit Ethernet Adapter on Monteray (worked on Big Sur with a bootarg still present in the `config.plist`).
-I'm currently using a generic gigabit USB dongle until this gets fixed. [Here](https://www.insanelymac.com/forum/topic/348493-discussion-intel-i225-v-on-macos-monterey/) and [here](https://github.com/dortania/bugtracker/issues/213#issuecomment-927155047) are some interesting threads with people trying to make it play nice on Monteray.
+I'm currently using a PCI-e card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext.
 
 ## Port mapping
 All USB ports work **except** the two next to the ethernet port (HS03/SS03 and HS04/SS04). I needed another USBC port on the front of my case + a USB 3 port + a USB 2 port so i had to disable those 2. If you don't need front IO (or use a different PC case) you can use `USBInjectAll.kext`, set `XhciPortLimit = true` and use Hackintool to map the ports you want.
@@ -66,6 +67,7 @@ The USBC port on the motherboard works and it's reversible.
 - AppleALC (audio layout 28)
 - VirtualSMC + SMCProcessor + SMCSuperIO
 - USBPorts
+- LucyRTL8125Ethernet
 
 ## Drivers used:
 - OpenCanopy

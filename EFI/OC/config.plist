@@ -125,12 +125,10 @@
                     <data>AwDImw==</data>
                     <key>AAPL,slot-name</key>
                     <string>Built-In</string>
-                    <key>device-id</key>
-                    <data>xZsAAA==</data>
                     <key>device_type</key>
                     <string>Display Controller</string>
                     <key>model</key>
-                    <string>Intel UHD Graphics 630 (Headless)</string>
+                    <string>Intel UHD Graphics 630</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -146,7 +144,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.5.7</string>
+                    <string>V1.6.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -162,27 +160,9 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>WhateverGreen.kext</string>
-                    <key>Comment</key>
-                    <string>V1.5.5</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/WhateverGreen</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -198,9 +178,81 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>RadeonSensor.kext</string>
+                    <key>Comment</key>
+                    <string>V0.3.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/RadeonSensor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>SMCRadeonGPU.kext</string>
+                    <key>Comment</key>
+                    <string>V0.3.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCRadeonGPU</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>WhateverGreen.kext</string>
+                    <key>Comment</key>
+                    <string>V1.5.8</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/WhateverGreen</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>LucyRTL8125Ethernet.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/LucyRTL8125Ethernet</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -218,7 +270,7 @@
                     <key>BundlePath</key>
                     <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7</string>
+                    <string>V1.2.9</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -254,7 +306,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.6</string>
+                    <string>V1.7.1</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -323,7 +375,7 @@
                 <key>ProvideCurrentCpuInfo</key>
                 <false/>
                 <key>SetApfsTrimTimeout</key>
-                <integer>-1</integer>
+                <integer>0</integer>
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
@@ -364,7 +416,7 @@
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
-                <string>Acidanthera\Syrah</string>
+                <string>Acidanthera\GoldenGate</string>
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
@@ -514,11 +566,11 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <false/>
+                    <true/>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Flavour</key>
                     <string>Auto</string>
                     <key>Name</key>
@@ -614,13 +666,13 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <false/>
+                    <true/>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Flavour</key>
-                    <string>Auto</string>
+                    <string>OpenShell:UEFIShell:Shell</string>
                     <key>Name</key>
                     <string>UEFI Shell</string>
                     <key>Path</key>
@@ -757,7 +809,7 @@
             <key>Generic</key>
             <dict>
                 <key>AdviseFeatures</key>
-                <false/>
+                <true/>
                 <key>MLB</key>
                 <string>REPLACEME</string>
                 <key>MaxBIOSVersion</key>
@@ -765,7 +817,7 @@
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>GMBNJGP1</data>
+                <data>REPLACEME</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -817,6 +869,12 @@
                 <integer>50</integer>
                 <key>KeySubsequentDelay</key>
                 <integer>5</integer>
+                <key>PointerPollMask</key>
+                <integer>-1</integer>
+                <key>PointerPollMax</key>
+                <integer>0</integer>
+                <key>PointerPollMin</key>
+                <integer>0</integer>
                 <key>PointerSpeedDiv</key>
                 <integer>1</integer>
                 <key>PointerSpeedMul</key>
@@ -825,22 +883,26 @@
             <key>Audio</key>
             <dict>
                 <key>AudioCodec</key>
-                <integer>0</integer>
+                <integer>28</integer>
                 <key>AudioDevice</key>
                 <string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
-                <key>AudioOut</key>
-                <integer>0</integer>
+                <key>AudioOutMask</key>
+                <integer>-1</integer>
                 <key>AudioSupport</key>
                 <true/>
-                <key>MinimumVolume</key>
-                <integer>20</integer>
+                <key>DisconnectHda</key>
+                <false/>
+                <key>MaximumGain</key>
+                <integer>-15</integer>
+                <key>MinimumAssistGain</key>
+                <integer>-30</integer>
+                <key>MinimumAudibleGain</key>
+                <integer>-128</integer>
                 <key>PlayChime</key>
                 <string>Enabled</string>
                 <key>ResetTrafficClass</key>
                 <false/>
                 <key>SetupDelay</key>
-                <integer>0</integer>
-                <key>VolumeAmplifier</key>
                 <integer>0</integer>
             </dict>
             <key>ConnectDrivers</key>
@@ -859,11 +921,11 @@
                 </dict>
                 <dict>
                     <key>Arguments</key>
-                    <string></string>
+                    <string>LINUX_BOOT_USE_LATEST</string>
                     <key>Comment</key>
                     <string></string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>Path</key>
                     <string>OpenLinuxBoot.efi</string>
                 </dict>
@@ -886,6 +948,26 @@
                     <true/>
                     <key>Path</key>
                     <string>OpenHfsPlus.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>ext4_x64.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>btrfs_x64.efi</string>
                 </dict>
             </array>
             <key>Input</key>
@@ -923,6 +1005,8 @@
                 <false/>
                 <key>ProvideConsoleGop</key>
                 <true/>
+                <key>ReconnectGraphicsOnConnect</key>
+                <false/>
                 <key>ReconnectOnResChange</key>
                 <false/>
                 <key>ReplaceTabWithSpace</key>
@@ -969,7 +1053,7 @@
                 <key>DeviceProperties</key>
                 <false/>
                 <key>FirmwareVolume</key>
-                <false/>
+                <true/>
                 <key>HashServices</key>
                 <false/>
                 <key>OSInfo</key>
@@ -984,11 +1068,13 @@
                 <key>DisableSecurityPolicy</key>
                 <false/>
                 <key>EnableVectorAcceleration</key>
+                <true/>
+                <key>EnableVmx</key>
                 <false/>
                 <key>ExitBootServicesDelay</key>
                 <integer>0</integer>
                 <key>ForceOcWriteFlash</key>
-                <true/>
+                <false/>
                 <key>ForgeUefiSupport</key>
                 <false/>
                 <key>IgnoreInvalidFlexRatio</key>
