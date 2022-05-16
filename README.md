@@ -40,26 +40,30 @@ The system triple boots Windows 11 and Linux Mint
 4. Boot the new macOS partition
 
 ## What works
-- macOS Monteray (12.1) and Big Sur (11.6.1)
+- macOS Monteray (12.3.1) and Big Sur (11.6.1)
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB via Fenvi T919)
 - Audio
-- HDMI/DP (Variable Refresh Rate if your Display is FreeSync 2 compatible)
+- HDMI/DP (with VRR)
 - All USB ports
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
 - Intel Quick Sync (if you enable iGPU in BIOS)
-- Temperature monitoring for everything except GPU (no GPU temp support in VirtualSMC for navi and big navi cards)
+- Temperature monitoring
 - Resizable Bar Support (enable Above 4G Decoding in BIOS)
 - Shutdown/Reboot/Update to newer macOS builds over time
 
 ## What doesn't work
-I225-V 2.5Gbit Ethernet Adapter on Monteray only works if you [reflash the firmware](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md).
-I'm currently using a PCI-e card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext as I already bought the card before the fix was found.
+- I225-V 2.5Gbit Ethernet Adapter on Monteray only works if you [reflash the firmware](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md).
+
+I'm currently using a PCI card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext as I already bought the card before the fix was found.
+
+## Not tested
+- Sleep
 
 ## Port mapping
 All USB ports work **except** the two next to the ethernet port (HS03/SS03 and HS04/SS04). I needed another USBC port on the front of my case + a USB 3 port + a USB 2 port so i had to disable those 2. If you don't need front IO (or use a different PC case) you can use `USBInjectAll.kext`, set `XhciPortLimit = true` and use Hackintool to map the ports you want.
 The USBC port on the motherboard works and it's reversible.
 
-![alt text](https://i.imgur.com/MlT8SOk.png "usb mapping")
+![usb mapping](https://i.imgur.com/MlT8SOk.png "usb mapping")
 
 ## Kexts used:
 - Lilu
@@ -67,7 +71,7 @@ The USBC port on the motherboard works and it's reversible.
 - AppleALC (audio layout 28)
 - VirtualSMC + SMCProcessor + SMCSuperIO
 - USBPorts
-- LucyRTL8125Ethernet
+- LucyRTL8125Ethernet (optional)
 
 ## Drivers used:
 - OpenCanopy
@@ -75,7 +79,7 @@ The USBC port on the motherboard works and it's reversible.
 - OpenLinuxBoot (optional)
 - OpenHfsPlus (optional)
 
-![neofetch](https://i.imgur.com/jBZFQJN.jpg)
+![neofetch](https://i.imgur.com/Y3nMbr4.png)
 
 ## Thanks/Credits
 - [5T33Z0](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore)
