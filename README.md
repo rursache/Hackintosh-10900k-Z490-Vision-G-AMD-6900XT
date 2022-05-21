@@ -39,6 +39,9 @@ Don't be an idiot and use these great tools instead of wasting your time with pr
 2. Create an macOS Monteray/Big Sur USB-Installer Stick, install OpenCore and copy my EFI folder ([how?](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D#installation-notes))
 3. Generate a new serial number, motherboard id, ROM (that's your motherboard's mac address without dots) and SMUUID (make sure serial number is **invalid** in order to iMessage/Facetime to work) ([how?](https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html#platforminfo))
 4. Boot the new macOS partition
+5. Copy the EFI to the local disk
+
+Here are some [tips and tricks](https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks)
 
 ## What works
 - macOS Monteray and Big Sur
