@@ -2,7 +2,7 @@
 
 # macOS Monteray - Hackintosh
 
-**Latest working macOS**: 12.3.1
+**Latest working macOS**: 12.4
 
 **Current OpenCore**: 0.8.0
 
@@ -29,6 +29,7 @@ Complete hardware specs:
 The system triple boots Windows 11 and Linux Mint
 
 ## Tools
+Don't be an idiot and use these great tools instead of wasting your time with propertree or other plist editors:
 - [OpenCore Auxiliary Tools](https://github.com/ic005k/QtOpenCoreConfig) - easy `config.plist` management
 	- [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/) - alternative for OCAT
 - [Hackintool](https://github.com/headkaze/Hackintool/releases) - debug and map USB ports
@@ -52,7 +53,7 @@ The system triple boots Windows 11 and Linux Mint
 - Shutdown/Reboot/Update to newer macOS builds over time
 
 ## What doesn't work
-- I225-V 2.5Gbit Ethernet Adapter on Monteray only works if you [reflash the firmware](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md).
+- I225-V 2.5Gbit Ethernet Adapter on Monteray only works if you [reflash the firmware](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/blob/main/I225-V_FIX.md). However it [did break the WiFi](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore/issues/17) for me.
 
 I'm currently using a PCI card (Realtek RTL8125B PCI Express 2.5 Gigabit Ethernet) with the LucyRTL8125Ethernet kext as I already bought the card before the fix was found.
 
@@ -70,7 +71,11 @@ The USBC port on the motherboard works and it's reversible.
 - Whatevergreen
 - AppleALC (audio layout 28)
 - VirtualSMC + SMCProcessor + SMCSuperIO
+- RadeonSensor + SMCRadeonGPU
 - USBPorts
+- NVMeFix
+- CPUFriend (optional)
+- CPUFriendDataProvider (optional, build your own if you don't have a 10900k)
 - LucyRTL8125Ethernet (optional)
 
 ## Drivers used:
@@ -85,8 +90,7 @@ The USBC port on the motherboard works and it's reversible.
 - [5T33Z0](https://github.com/5T33Z0/Gigabyte-Z490-Vision-G-Hackintosh-OpenCore)
 - [SchmockLord](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D)
 - [samuel21119](https://github.com/samuel21119/Intel-i9-10900-Gigabyte-Z490-Vision-G-Hackintosh)
-- tonymacx86
 - insanelymac
-
+- tonymacx86
 
 **Fuck /r/Hackintosh mods for not allowing EFI sharing and being on power trips**
