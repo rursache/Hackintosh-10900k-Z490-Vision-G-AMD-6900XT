@@ -41,7 +41,7 @@ Don't be an idiot and use these great tools instead of wasting your time with pr
 4. Boot the new macOS partition
 
 ## What works
-- macOS Monteray (12.3.1) and Big Sur (11.6.1)
+- macOS Monteray and Big Sur
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB via Fenvi T919)
 - Audio
 - HDMI/DP (with VRR)
