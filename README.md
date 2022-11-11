@@ -1,6 +1,6 @@
 <img src="https://i.imgur.com/foW4AcU.jpg" height="350" title="HackintoshLogo">
 
-# macOS Monteray - Hackintosh
+# macOS Ventura - Hackintosh
 
 **Latest working macOS**: 13.0.1 (22A400)
 
