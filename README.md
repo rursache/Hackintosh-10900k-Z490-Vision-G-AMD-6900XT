@@ -2,9 +2,9 @@
 
 # macOS Monteray - Hackintosh
 
-**Latest working macOS**: 12.4
+**Latest working macOS**: 13.0.1 (22A400)
 
-**Current OpenCore**: 0.8.2
+**Current OpenCore**: 0.8.6
 
 Complete hardware specs:
 - **CPU**: Intel 10900k OC to 5.1GHz
@@ -26,7 +26,7 @@ Complete hardware specs:
 
 **SMBIOS**: iMac20,2
 
-The system triple boots Windows 11 and Linux Mint
+The system triple boots Windows 11 and Ubuntu Mate
 
 ## Tools
 Don't be an idiot and use these great tools instead of wasting your time with propertree or other plist editors:
@@ -44,9 +44,10 @@ Don't be an idiot and use these great tools instead of wasting your time with pr
 Here are some [tips and tricks](https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks)
 
 ## What works
-- macOS Monteray and Big Sur
+- macOS Ventura, Monteray and Big Sur
 - WiFi and Bluetooth + Airdrop + Sidecar + Continuity (OOB via Fenvi T919)
 - Audio
+	- **NOTE**: Run `defaults write com.apple.AppleGVA gvaForceAMDKE -boolean yes` if Apple Music won't start playing songs 
 - HDMI/DP (with VRR)
 - All USB ports
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
