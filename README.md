@@ -1,3 +1,8 @@
+> [!WARNING]
+> This repo is archived due to the fact that I migrated over to new hardware, the new repo is [here](https://github.com/rursache/Hackintosh-13900k-Z690-AORUS-ELITE-AX-DDR5-AMD-6900XT)
+
+----
+
 <img src="https://i.imgur.com/foW4AcU.jpg" height="350" title="HackintoshLogo">
 
 # macOS Ventura - Hackintosh
